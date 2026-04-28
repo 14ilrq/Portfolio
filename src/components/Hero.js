@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiDownload, FiMail, FiGithub, FiLinkedin } from 'react-icons/fi';
+import { FiDownload, FiMail, FiLinkedin } from 'react-icons/fi';
 import { FaWhatsapp } from "react-icons/fa";
 // import {adil_dp} from "../../public/adil_dp.jpeg"
 

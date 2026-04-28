@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiAward, FiCalendar, FiExternalLink, FiCheckCircle, FiClock } from 'react-icons/fi';
+import { FiCalendar, FiCheckCircle, FiClock } from 'react-icons/fi';
 
 const Certifications = () => {
   const certifications = [
@@ -58,23 +58,6 @@ const Certifications = () => {
     }
   ];
 
-  const upcomingCertifications = [
-    {
-      title: 'CompTIA Network+',
-      target: 'Q2 2025',
-      description: 'Industry-standard networking certification'
-    },
-    {
-      title: 'AWS Cloud Practitioner',
-      target: 'Q3 2025',
-      description: 'Cloud computing fundamentals certification'
-    },
-    {
-      title: 'CompTIA Security+',
-      target: 'Q4 2025',
-      description: 'Cybersecurity fundamentals certification'
-    }
-  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },

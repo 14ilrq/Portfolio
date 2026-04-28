@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiMail, FiPhone, FiMapPin, FiLinkedin, FiGithub, FiArrowUp, FiHeart } from 'react-icons/fi';
+import { FiMail, FiPhone, FiMapPin, FiLinkedin, FiArrowUp, FiHeart } from 'react-icons/fi';
 
 const Footer = () => {
   const scrollToTop = () => {
