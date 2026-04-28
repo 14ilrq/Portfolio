@@ -114,17 +114,17 @@ const Skills = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"
           >
             Technical <span className="text-gradient">Skills</span>
           </motion.h2>
           <motion.div
             variants={itemVariants}
-            className="w-20 h-1 bg-gradient-to-r from-primary-600 to-purple-600 rounded-full mx-auto mb-6"
+            className="w-16 sm:w-20 h-1 bg-gradient-to-r from-primary-600 to-purple-600 rounded-full mx-auto mb-6"
           />
           <motion.p
             variants={itemVariants}
-            className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
+            className="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed"
           >
             Comprehensive expertise in network engineering, security implementation, 
             and system administration with hands-on experience in industry-standard tools.
@@ -136,7 +136,7 @@ const Skills = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
         >
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
@@ -147,10 +147,10 @@ const Skills = () => {
             >
               {/* Category Header */}
               <div className="flex items-center mb-6">
-                <div className={`p-3 rounded-lg bg-gradient-to-r ${category.color} mr-4`}>
-                  <category.icon className="w-6 h-6 text-white" />
+                <div className={`p-2 sm:p-3 rounded-lg bg-gradient-to-r ${category.color} mr-3 sm:mr-4`}>
+                  <category.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white">
                   {category.title}
                 </h3>
               </div>
@@ -214,11 +214,11 @@ const Skills = () => {
           variants={containerVariants}
           className="mt-16"
         >
-          <motion.div variants={itemVariants} className="card p-8">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+          <motion.div variants={itemVariants} className="card p-4 sm:p-6 lg:p-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
               Professional Competencies
             </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {[
                 { icon: FiMonitor, title: 'Network Monitoring', desc: 'Real-time network performance analysis' },
                 { icon: FiLock, title: 'Security Implementation', desc: 'Enterprise-grade security protocols' },

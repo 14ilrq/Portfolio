@@ -19,6 +19,19 @@ const Certifications = () => {
     },
     {
       id: 2,
+      title: 'CCNP Enterprise',
+      issuer: 'Network Bulls',
+      status: 'Completed',
+      date: 'Completed 2026',
+      description: 'Comprehensive training in Cisco networking technologies, routing protocols,switching technologies and network troubleshooting.',
+      skills: ['BGP', 'OSPF', 'STP', 'VPN'],
+      icon: '📡',
+      color: 'from-green-500 to-emerald-500',
+      credentialId: 'CCNP (204-290)',
+      link: '#'
+    },
+    {
+      id: 3,
       title: 'CCNA Training',
       issuer: 'Network Bulls',
       status: 'Completed',
@@ -28,19 +41,6 @@ const Certifications = () => {
       icon: '🌐',
       color: 'from-blue-500 to-cyan-500',
       credentialId: 'CCNA (200-301)',
-      link: '#'
-    },
-    {
-      id: 3,
-      title: 'Networking Basics',
-      issuer: 'Cisco Networking Academy',
-      status: 'Certified',
-      date: 'Completed 2025',
-      description: 'Foundational certification covering core networking concepts, TCP/IP, and network fundamentals.',
-      skills: ['TCP/IP', 'Network Fundamentals', 'OSI Model', 'Ethernet'],
-      icon: '📡',
-      color: 'from-green-500 to-emerald-500',
-      credentialId: 'CNA-NB-2024',
       link: '#'
     },
     {
@@ -224,51 +224,6 @@ const Certifications = () => {
               />
             </motion.div>
           ))}
-        </motion.div>
-
-        {/* Upcoming Certifications */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={containerVariants}
-        >
-          <motion.div variants={itemVariants} className="card p-8">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Upcoming Certifications
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                Planned certifications to further enhance my expertise in networking and security
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              {upcomingCertifications.map((cert, index) => (
-                <motion.div
-                  key={cert.title}
-                  variants={itemVariants}
-                  whileHover={{ scale: 1.02 }}
-                  className="p-6 bg-gray-50 dark:bg-dark-100 rounded-lg border-2 border-dashed border-gray-300 dark:border-gray-600 hover:border-primary-400 dark:hover:border-primary-500 transition-colors duration-300"
-                >
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <FiAward className="w-6 h-6 text-primary-600 dark:text-primary-400" />
-                    </div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
-                      {cert.title}
-                    </h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                      {cert.description}
-                    </p>
-                    {/* <div className="text-sm font-medium text-primary-600 dark:text-primary-400">
-                      Target: {cert.target}
-                    </div> */}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
         </motion.div>
 
         {/* Learning Philosophy */}

@@ -88,16 +88,21 @@ const About = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
+                  CCNP Enterprise Certified - Network Bulls
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
+                  CCNA Training & Networking Basics Certified
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
                   Network Support Experience at Isource Technologies
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
                   Desktop Support Specialist at S.A. Digital
                 </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
-                  CCNA Training & Networking Basics Certified
-                </li>
+                
               </ul>
             </motion.div>
           </motion.div>

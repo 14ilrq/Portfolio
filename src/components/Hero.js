@@ -37,13 +37,13 @@ const Hero = () => {
               transition={{ delay: 0.2 }}
               className="space-y-2"
             >
-              <h2 className="text-lg font-medium text-primary-600 dark:text-primary-400">
+              <h2 className="text-sm sm:text-lg font-medium text-primary-600 dark:text-primary-400">
                 Hello, I'm
               </h2>
-              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
                 Mohd <span className="text-gradient">Adil</span>
               </h1>
-              <h3 className="text-xl md:text-2xl font-semibold text-gray-700 dark:text-gray-300">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-700 dark:text-gray-300">
                 Network Engineer Trainee
               </h3>
             </motion.div>
@@ -52,7 +52,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-lg text-gray-600 dark:text-gray-400 max-w-lg"
+              className="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 max-w-lg leading-relaxed"
             >
               Building reliable, secure, and high-performance networks. Currently undergoing intensive CCIE Security training with expertise in routing & switching, firewall configuration, and network troubleshooting.
             </motion.p>
@@ -119,7 +119,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative w-full h-96 lg:h-[500px]">
+            <div className="relative w-full h-80 sm:h-96 lg:h-[500px]">
               {/* Animated Network Nodes */}
               <motion.div
                 animate={{
@@ -137,7 +137,7 @@ const Hero = () => {
                   {[...Array(8)].map((_, i) => (
                     <motion.div
                       key={i}
-                      className="absolute w-4 h-4 bg-primary-500 rounded-full"
+                      className="absolute w-3 h-3 sm:w-4 sm:h-4 bg-primary-500 rounded-full"
                       style={{
                         top: `${20 + (i % 4) * 20}%`,
                         left: `${20 + Math.floor(i / 4) * 60}%`,
@@ -162,14 +162,14 @@ const Hero = () => {
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ delay: 1, type: "spring", stiffness: 200 }}
-                  className="w-64 h-64 bg-gradient-to-br from-primary-500 to-purple-600 rounded-full flex items-center justify-center"
+                  className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 bg-gradient-to-br from-primary-500 to-purple-600 rounded-full flex items-center justify-center"
                 >
                   <div className="">
                     <div className="text-center">
                       <img 
                         src="/adil_dp.jpeg" 
                         alt="Mohd Adil - Network Engineer" 
-                        className="w-60 h-60 rounded-full object-cover mx-auto"
+                        className="w-44 h-44 sm:w-52 sm:h-52 md:w-60 md:h-60 rounded-full object-cover mx-auto"
                       />
                     </div>
                   </div>
@@ -180,25 +180,25 @@ const Hero = () => {
               <motion.div
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 3, repeat: Infinity }}
-                className="absolute top-10 right-10 p-4 bg-white dark:bg-dark-100 rounded-lg shadow-lg"
+                className="absolute top-6 right-6 sm:top-10 sm:right-10 p-2 sm:p-4 bg-white dark:bg-dark-100 rounded-lg shadow-lg pointer-events-none z-0"
               >
-                <div className="text-2xl">🌐</div>
+                <div className="text-lg sm:text-2xl">🌐</div>
               </motion.div>
 
               <motion.div
                 animate={{ y: [10, -10, 10] }}
                 transition={{ duration: 3, repeat: Infinity, delay: 1 }}
-                className="absolute bottom-20 left-10 p-4 bg-white dark:bg-dark-100 rounded-lg shadow-lg"
+                className="absolute bottom-16 left-6 sm:bottom-20 sm:left-10 p-2 sm:p-4 bg-white dark:bg-dark-100 rounded-lg shadow-lg pointer-events-none z-0"
               >
-                <div className="text-2xl">🔒</div>
+                <div className="text-lg sm:text-2xl">🔒</div>
               </motion.div>
 
               <motion.div
                 animate={{ y: [-5, 15, -5] }}
                 transition={{ duration: 3, repeat: Infinity, delay: 2 }}
-                className="absolute top-1/2 right-0 p-4 bg-white dark:bg-dark-100 rounded-lg shadow-lg"
+                className="absolute top-1/2 right-0 p-2 sm:p-4 bg-white dark:bg-dark-100 rounded-lg shadow-lg pointer-events-none z-0"
               >
-                <div className="text-2xl">⚡</div>
+                <div className="text-lg sm:text-2xl">⚡</div>
               </motion.div>
             </div>
           </motion.div>
